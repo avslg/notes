@@ -1,0 +1,28 @@
+{
+  "name": "js-notes",
+  "version": "1.0.0",
+  "description": "just notes for understanding ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avslg/notes.git"
+  },
+  "keywords": [
+    "js",
+    "javascript"
+  ],
+  "author": "artem vs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avslg/notes/issues"
+  },
+  "homepage": "https://github.com/avslg/notes#readme",
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
