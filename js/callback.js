@@ -28,3 +28,8 @@ function App() {
 
 const APPL = new App();
 APPL.update(APPL.getList.bind(APPL));
+
+/*
+data has been updated
+(8) [1, 2, 3, 4, 5, 6, 7, 8]
+*/
