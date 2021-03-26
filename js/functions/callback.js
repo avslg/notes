@@ -26,8 +26,8 @@ function App() {
   };
 }
 
-const APPL = new App();
-APPL.update(APPL.getList.bind(APPL));
+const appl = new App();
+appl.update(appl.getList.bind(appl));
 
 /*
 data has been updated
