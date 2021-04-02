@@ -17,8 +17,9 @@ and will exist as long as that function persists.
 */
 
 function getFeatures(mes) {
+  let message = mes;
+
   function addDiezLetter() {
-    let message = mes;
     message += '#';
     return message;
   }
