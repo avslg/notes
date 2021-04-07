@@ -1,3 +1,5 @@
+/* eslint-disable no-redeclare */
+/* eslint-disable no-var */
 /*
 https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var
 
@@ -17,9 +19,9 @@ let variables are not initialized until their definition is evaluated.
 Accessing them before the initialization results in a ReferenceError
 */
 
-(function app(params) {
-  var num = 10; //
-  var num = 20; //
+(function app() {
+  var num = 10;
+  var num = 20;
   var num = 111; // yes. OMG. var in js may be declared more then once
 
   console.log('num: %s', num);

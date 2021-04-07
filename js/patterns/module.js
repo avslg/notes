@@ -14,12 +14,12 @@ Simple way to isolate variables declarations.
 ******************
 (function() {
 
-})()
+}())
 ******************
 
 ;(function(param) {
 
-})()
+}())
 
 IIFEs starting with a semicolon
 

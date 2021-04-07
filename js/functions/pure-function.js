@@ -6,7 +6,7 @@ Pure function is when conditions true:
 (e.g doesnt't change global variable values)
 
 an example among existing function is method slice()
-of an array which  is a pure function
+of an array which is a pure function
 
 */
 

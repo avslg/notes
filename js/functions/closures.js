@@ -28,7 +28,7 @@ function getFeatures(mes) {
 }
 
 const caption = 'Some Text';
-const launcher = getFeatures(caption);
+var launcher = getFeatures(caption);
 
 // invokes 5 times
 for (let i = 0; i < 5; i += 1) {
@@ -42,3 +42,5 @@ Some Text###
 Some Text####
 Some Text#####
 */
+
+launcher = null; // await garbage collector

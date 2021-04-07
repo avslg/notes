@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 /*
 https://frontender.info/exploring-the-abyss-of-null-and-undefined-in-javascript/
 
@@ -9,7 +10,7 @@ https://frontender.info/exploring-the-abyss-of-null-and-undefined-in-javascript/
 
 */
 
-const app = (function () {
+(function app() {
   console.log(undefined == null); // true
   console.log(undefined === null); // !!! false
   console.log(null == 0); // false
