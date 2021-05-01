@@ -19,7 +19,7 @@ var Human = {
   },
 };
 
-Object.setPrototypeOf(Human, LifeForm);
+Object.setPrototypeOf(Human, LifeForm); // inheritance
 
 let Joe = Object.create(Human);
 Joe.init('Joe');
