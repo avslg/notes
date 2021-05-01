@@ -3,6 +3,13 @@
 Kyle Simpson's "OLOO (Objects Linking to Other Objects) Pattern
 
 */
+
+var LifeForm = {
+  breath: function breath() {
+    console.log('breathing');
+  },
+};
+
 var Human = {
   init(name) {
     this.humanName = name;
@@ -12,10 +19,13 @@ var Human = {
   },
 };
 
-var Joe = Object.create(Human);
+Object.setPrototypeOf(Human, LifeForm);
+
+let Joe = Object.create(Human);
 Joe.init('Joe');
 Joe.toString = function toString() {
   return this.identify();
 };
 
 console.log(`${Joe} !`);
+Joe.breath();
