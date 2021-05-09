@@ -25,7 +25,7 @@ let manual = function getManualCurridFumction(fname) {
 console.log(manual(multiply)(5)(5)(5)); // 125
 
 /* example 2, implementation universal currying function */
-function getCurridFumction(fname) {
+function getCurriedFunction(fname) {
   return function curriedFunction(...firstInvokedArgs) {
     if (firstInvokedArgs.length >= fname.length) {
       return fname.call(null, ...firstInvokedArgs);
@@ -33,7 +33,7 @@ function getCurridFumction(fname) {
     return (...additionalArgs) => curriedFunction(...firstInvokedArgs.concat(additionalArgs));
   };
 }
-let curriedFunction = getCurridFumction(multiply);
+let curriedFunction = getCurriedFunction(multiply);
 
 // console.log(curriedFunction(1, 2, 3, 5)(5)); // TypeError
 console.log(curriedFunction(1, 2, 3, 5)); // 6
