@@ -5,7 +5,7 @@ currying (карирование)
 
 Currying is a tehnique that transforms a function
 with multiple arguments into a series of functions,
-in which each function only single argument.
+in which each function has only single argument.
 */
 
 function multiply(a, b, c) {
